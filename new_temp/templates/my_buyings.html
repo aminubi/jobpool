@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 
 {% block page %}
-  <h1 style="margin-bottom: 30px">My Sellings</h1>
+  <h1 style="margin-bottom: 30px">My Buyings</h1>
   <div class="panel panel-default">
     <table class="table table-bordered table-striped">
       <thead class="bg-success">
         <tr>
           <th></th>
           <th>Gig Title</th>
-          <th>Buyer</th>
+          <th>Author</th>
           <th>Price ($)</th>
           <th>Date</th>
         </tr>
       </thead>
       <tbody>
           <tr>
+            <td>{{ forloop.counter }}</td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
             <td></td>
-            <td><a href="{% url 'edit_gig' purchase.gig.id %}">{{ purchase.gig.title }}</a></td>
-            <td><a href="{% url 'profile' purchase.buyer.username %}">{{ purchase.buyer.username }}</a></td>
-            <td>{{ purchase.gig.price }}</td>
-            <td>{{ purchase.time }}</td>
+            <td></td>
           </tr>
         {% endfor %}
       </tbody>

@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block page %}
-
-  {% if request.user == profile.user %}
     <form method="POST">
       {% csrf_token %}
       <div class="jumbotron text-center">

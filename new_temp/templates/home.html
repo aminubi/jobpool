@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block page %}
+
+  <div class="row">
+    <div class="col-md-12">
+      <img src="" class="banner">
+    </div>
+
+    {% for gig in gigs %}
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href=""><img src="/media/"></a>
+          <div class="caption">
+            <p><a href="</a></p>
+            <p><span>by <a href=""></a></span><b class="green pull-right"></b></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

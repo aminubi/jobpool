@@ -6,7 +6,7 @@
     <div class="col-md-8">
       <div class="panel panel-default">
         <div class="panel-body">
-          <h3>{{ gig.title }}</h3>
+          <h3>title</h3>
           <hr/>
           <img src="/media/{{ gig.photo }}" class="img-repsonsive center-block">
         </div>
@@ -16,7 +16,7 @@
           <h4>About This Gig</h4>
         </div>
         <div class="panel-body">
-          <p>{{ gig.description }}</p>
+          <p>description</p>
         </div>
       </div>
       <div class="panel panel-default">
@@ -60,7 +60,7 @@
       <div class="panel panel-defaul">
         <div class="panel-body">
 
-        
+          {% if user and not user.is_anonymous %}
             <form method="POST" action="/checkout/">
               {% csrf_token %}
               <div id="payment-form"></div>
@@ -91,9 +91,9 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <img src="{{ gig.user.profile.avatar }}" class="img-circle center-block" height="100" width="100">
-          <a href="{% url 'profile' gig.user.username %}"><h4 class="text-center">{{ gig.user.username }}</h4></a>
+          <a href="{% url 'profile' gig.user.username %}"><h4 class="text-center"></h4></a>
           <hr/>
-          <p>{{ gig.user.profile.about }}</p>
+          <p>}</p>
         </div>
       </div>
     </div>

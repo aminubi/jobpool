@@ -14,12 +14,13 @@
         </tr>
       </thead>
       <tbody>
+        {% for purchase in purchases %}
           <tr>
             <td></td>
-            <td><a href="{% url 'edit_gig' purchase.gig.id %}">{{ purchase.gig.title }}</a></td>
-            <td><a href="{% url 'profile' purchase.buyer.username %}">{{ purchase.buyer.username }}</a></td>
-            <td>{{ purchase.gig.price }}</td>
-            <td>{{ purchase.time }}</td>
+            <td><a href=""></a></td>
+            <td><a href=""></a></td>
+            <td></td>
+            <td></td>
           </tr>
         {% endfor %}
       </tbody>
